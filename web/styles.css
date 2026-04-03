@@ -190,15 +190,17 @@ h1 {
 }
 
 .featured {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-gold);
+  background: linear-gradient(165deg, rgba(255, 203, 74, 0.12), rgba(255, 95, 210, 0.05)),
+    var(--surface);
 }
 
 .pill {
   margin: 0 0 0.5rem;
   display: inline-block;
   font-size: 0.75rem;
-  color: #00172a;
-  background: #9ed7ff;
+  color: #331a00;
+  background: linear-gradient(90deg, #ffcb4a, #ffd976);
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
   font-weight: 700;
@@ -242,23 +244,25 @@ ul {
 }
 
 .badges span {
-  border: 1px solid #2e4361;
+  border: 1px solid #5e5cb6;
   border-radius: 999px;
   padding: 0.25rem 0.6rem;
-  color: var(--muted);
+  color: #e9dcff;
   font-size: 0.88rem;
+  background: rgba(143, 91, 255, 0.12);
 }
 
 .btn {
   display: inline-block;
   border: none;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--accent), var(--accent-pink));
   color: white;
   text-decoration: none;
   border-radius: 12px;
   padding: 0.72rem 1rem;
   font-weight: 700;
   cursor: pointer;
+  box-shadow: 0 6px 18px rgba(143, 91, 255, 0.38);
 }
 
 .btn-sm {
@@ -267,8 +271,8 @@ ul {
 }
 
 .btn-outline {
-  border: 1px solid #3c4c65;
-  background: transparent;
+  border: 1px solid #6657a3;
+  background: rgba(255, 255, 255, 0.02);
   color: var(--text);
 }
 
@@ -306,9 +310,10 @@ select {
 
 footer {
   text-align: center;
-  color: var(--muted);
+  color: #d9d1f6;
   border-top: 1px solid var(--line);
   padding: 0.9rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
 }
 
 .reveal {
