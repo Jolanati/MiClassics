@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiClassics Car Wash & Detailing</title>
+    <meta
+      name="description"
+      content="MiClassics Car Wash & Detailing keeps your vehicle spotless with hand wash, interior detailing, and ceramic protection services."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav container">
+        <a class="logo" href="#top">MiClassics</a>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact" class="btn btn-sm">Book Now</a>
+        </div>
+      </nav>
+
+      <div class="hero-content container reveal">
+        <p class="eyebrow">Car Wash + Premium Detailing</p>
+        <h1>From Dusty to Showroom in One Appointment.</h1>
+        <p class="hero-sub">
+          Fast, careful, and paint-safe car wash services with optional deep
+          interior detailing and coating protection.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Get Instant Estimate</a>
+          <a class="btn btn-outline" href="#pricing">View Packages</a>
+        </div>
+        <div class="badges">
+          <span>✅ Hand Wash Experts</span>
+          <span>✅ Interior Steam Cleaning</span>
+          <span>✅ Same-Day Slots</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container stats reveal">
+        <div class="stat">
+          <h3 data-counter="1200">0</h3>
+          <p>Cars washed</p>
+        </div>
+        <div class="stat">
+          <h3 data-counter="4.9">0</h3>
+          <p>Average rating</p>
+        </div>
+        <div class="stat">
+          <h3 data-counter="30">0</h3>
+          <p>Minute express wash</p>
+        </div>
+      </section>
+
+      <section id="services" class="section container reveal">
+        <h2>Popular Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Express Exterior Wash</h3>
+            <p>Foam pre-rinse, hand wash, wheel cleaning, and streak-free dry.</p>
+          </article>
+          <article class="card">
+            <h3>Interior Refresh</h3>
+            <p>Vacuum, dashboard treatment, window polish, and mat shampoo.</p>
+          </article>
+          <article class="card">
+            <h3>Premium Full Detail</h3>
+            <p>Complete inside-out restoration plus wax and paint sealant.</p>
+          </article>
+          <article class="card">
+            <h3>Ceramic Boost</h3>
+            <p>Add hydrophobic protection and extra shine durability.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section container reveal">
+        <h2>Cars We Care For</h2>
+        <p class="hero-sub">Real car wash and detailing vibes from our daily workflow.</p>
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1607861716497-e65ab29fc7ac?auto=format&fit=crop&w=1200&q=80"
+              alt="Blue car covered with foam during hand wash"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80"
+              alt="Shiny car after detailing service"
+              loading="lazy"
+            />
+          </figure>
+          <figure class="gallery-card">
+            <img
+              src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?auto=format&fit=crop&w=1200&q=80"
+              alt="Car interior being cleaned and detailed"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="pricing" class="section dark reveal">
+        <div class="container">
+          <div class="section-head">
+            <h2>Simple Package Pricing</h2>
+            <div class="toggle-wrap">
+              <span>Sedan</span>
+              <label class="switch">
+                <input id="vehicleToggle" type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <span>SUV / Truck</span>
+            </div>
+          </div>
+
+          <div class="grid pricing-grid">
+            <article class="card price-card">
+              <h3>Quick Shine</h3>
+              <p class="price" data-sedan="29" data-suv="39">$29</p>
+              <ul>
+                <li>Exterior hand wash</li>
+                <li>Tire shine</li>
+                <li>Spray wax finish</li>
+              </ul>
+            </article>
+            <article class="card price-card featured">
+              <p class="pill">Most Popular</p>
+              <h3>Inside + Out</h3>
+              <p class="price" data-sedan="79" data-suv="99">$79</p>
+              <ul>
+                <li>Full wash and dry</li>
+                <li>Interior vacuum + wipe down</li>
+                <li>Glass + trim treatment</li>
+              </ul>
+            </article>
+            <article class="card price-card">
+              <h3>Showroom Detail</h3>
+              <p class="price" data-sedan="149" data-suv="179">$149</p>
+              <ul>
+                <li>Deep clean interior + exterior</li>
+                <li>Clay bar + polish</li>
+                <li>Premium protection layer</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section container reveal">
+        <h2>Customer Highlights</h2>
+        <div class="review-box">
+          <p id="reviewText"></p>
+          <p id="reviewAuthor" class="author"></p>
+          <div class="review-controls">
+            <button class="btn btn-outline" id="prevReview" type="button">←</button>
+            <button class="btn btn-outline" id="nextReview" type="button">→</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section container reveal">
+        <h2>Book Your Wash</h2>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Full name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone number
+            <input type="tel" name="phone" placeholder="(555) 000-0000" required />
+          </label>
+          <label>
+            Vehicle type
+            <select name="vehicle" id="vehicleType">
+              <option value="sedan">Sedan</option>
+              <option value="suv">SUV/Truck</option>
+            </select>
+          </label>
+          <label>
+            Package
+            <select name="package" id="packageType">
+              <option value="29">Quick Shine</option>
+              <option value="79">Inside + Out</option>
+              <option value="149">Showroom Detail</option>
+            </select>
+          </label>
+          <p class="estimate">Estimated total: <strong id="estimate">$29</strong></p>
+          <button class="btn" type="submit">Request Booking</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> MiClassics Car Wash. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
