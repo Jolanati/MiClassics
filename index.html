@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MiClassics | Premium Car Service</title>
+    <meta
+      name="description"
+      content="MiClassics provides premium vehicle care and classic car detailing services."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="logo">MiClassics</div>
+        <a class="btn btn-outline" href="#contact">Book Now</a>
+      </nav>
+
+      <div class="hero-content">
+        <p class="eyebrow">Trusted Auto Care</p>
+        <h1>Bring Your Car Back to Showroom Condition.</h1>
+        <p>
+          Professional detailing, polishing, interior restoration, and ceramic
+          coating for classic and modern vehicles.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#services">View Services</a>
+          <a class="btn btn-outline" href="#contact">Get a Quote</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="services" class="section container">
+        <h2>Our Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Exterior Detailing</h3>
+            <p>Paint correction, waxing, and deep shine protection.</p>
+          </article>
+          <article class="card">
+            <h3>Interior Restoration</h3>
+            <p>Deep cleaning, leather treatment, and odor removal.</p>
+          </article>
+          <article class="card">
+            <h3>Ceramic Coating</h3>
+            <p>Long-lasting protection against UV, water spots, and scratches.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section dark">
+        <div class="container">
+          <h2>Why MiClassics?</h2>
+          <ul class="highlights">
+            <li>Experienced specialists for classic and premium cars</li>
+            <li>Eco-friendly products and safe detailing methods</li>
+            <li>Fast turnaround with quality-focused service</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section container">
+        <h2>Request a Booking</h2>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" placeholder="Your phone" required />
+          </label>
+          <label>
+            Vehicle
+            <input type="text" name="vehicle" placeholder="Make & model" />
+          </label>
+          <label>
+            Service needed
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="Tell us what you need"
+            ></textarea>
+          </label>
+          <button class="btn" type="submit">Send Request</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> MiClassics. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
